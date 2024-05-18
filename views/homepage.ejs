@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/homepage.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+    <title>USER</title>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo"><i class="ri-home-heart-fill"></i><span>BRRS</span></a>
+       
+        <ul class="navbar">
+            <li><a href="#home" class="active">DASHBOARD</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#service">SERVICES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    
+        <div class="main">
+            <a href="./register" class="register"><i class="ri-logout-box-r-line"></i><span>SIGN IN</span></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <DIV class="home-content">
+            <h1>BARANGGAY <span>SAN ISIDRO</span> RODRIGUEZ RIZAL</h1>
+            <a href="./login" class="btn">LOG IN</a>
+        </DIV>
+
+        <div class="home-img">
+            <div class="img">
+                <img src="/images/logo.png">
+            </div>
+        </div>
+
+        <div class="img2"></div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="/images/307845826_458411346316904_6603290788942656632_n.jpg">
+        </div>
+
+        <div class="about-content">
+            <h1>ABOUT US</h1>
+            <h2>WELCOME TO THE BARANGAY <span>SAN ISIDRO</span> REQUIREMENT REQUEST SYSTEM</h2>
+            <P>We are committed to providing efficient and transparent services to our community members. 
+                Our requirement request system is design to streamline the processof obtaining various documents and permits,
+                ensuring convenience and accessibility for all.</P>
+            <p>With a dedicated team of professional, we strive to uphold the principle of integrity, accountability, and responsiveness
+                in serving the needs of our constituents. Whether you're applying for a barangay clearance, business permit, or any other official document,
+                our system is here to facilitate a smooth and hassle-free experience. 
+            </p>
+        </div>
+    </section>
+
+    <section class="service" id="service">
+        <div class="container">
+            <div class="service-wrapper">
+                <div class="service">
+                    <h1>OUR SERVICE</h1>
+                    <div class="cards">
+                        <a href="../views/login.php">
+                        <div class="card">
+                            <i class="ri-file-2-line"></i>
+                            <h2>BARANGAY CLEARANCE</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti veritatis sit veniam ducimus quas vel nemo dicta asperiores ad.
+                            Sapiente dolorum natus maiores ab quod sit delectus, harum officia?</p> 
+                        </div>
+                        </a>
+                        <a href="../views/login.php">
+                        <div class="card">
+                            <i class="ri-file-2-line"></i>
+                            <h2>INDIGENCY</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti veritatis sit veniam ducimus quas vel nemo dicta asperiores ad.
+                            Sapiente dolorum natus maiores ab quod sit delectus, harum officia?</p>
+                        </div>
+                        </a>
+                        <a href="../views/login.php">
+                        <div class="card">
+                            <i class="ri-file-2-line"></i>
+                            <h2>BUSINESS PERMIT</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti veritatis sit veniam ducimus quas vel nemo dicta asperiores ad.
+                            Sapiente dolorum natus maiores ab quod sit delectus, harum officia?</p>
+                        </div>
+                        </a>
+                        <a href="../views/login.php">
+                        <div class="card">
+                            <i class="ri-file-2-line"></i>
+                            <h2>BARANGAY ID</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti veritatis sit veniam ducimus quas vel nemo dicta asperiores ad.
+                            Sapiente dolorum natus maiores ab quod sit delectus, harum officia?</p>
+                        </div>
+                         </a>
+                         <a href="../views/login.php">
+                        <div class="card">
+                            <i class="ri-file-2-line"></i>
+                            <h2>CEDULA</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti veritatis sit veniam ducimus quas vel nemo dicta asperiores ad.
+                            Sapiente dolorum natus maiores ab quod sit delectus, harum officia?</p>
+                        </div>
+                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="contact">
+            <h1>CONTACT</h1>
+            <h2 class="heading">Get in touch</h2>
+            <p class="para"></p>
+        </div>
+        <div class="contactForm">
+            <form action="#">
+                <h2 class="sub-heading">Contact us here</h2>
+                <p class="para, para2"></p>
+
+                <input type="text" class="input" placeholder="Your Name">
+                <input type="text" class="input" placeholder="Your Email">
+                <input type="text" class="input" placeholder="Your Subject">
+                <textarea class="input" cols="30" rows="5"></textarea>
+                <input type="submit" class="input submit" value="Send Message">
+            </form>
+
+            <div class="map-container">
+                <div class="mapBg"></div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.1475847207666!2d121.15088547423672!3d14.760713973138323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397a4b7516dd23b%3A0xde91b846012554e4!2sSan%20Isidro%20Barangay%20Hall!5e0!3m2!1sen!2sph!4v1714910050452!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+        </div>
+        <div class="contactMethod">
+            <div class="method">
+                <i class="fa-solid fa-location-dot contactIcon"></i>
+                <article class="text">
+                    <h2 class="sub-heading">Location</h2>
+                    <p class="para">2276 Lynn Ogden Lane Beaumont</p>
+                </article>
+            </div>
+    
+            <div class="method">
+                <i class="fa-solid fa-envelope contactIcon"></i>
+                <article class="text">
+                    <h2 class="sub-heading">Email</h2>
+                    <p class="para">Email: programminginsider2021@gmail.com</p>
+                </article>
+            </div>
+    
+            <div class="method">
+                <i class="fa-solid fa-phone contactIcon"></i>
+                <article class="text">
+                    <h2 class="sub-heading">Phone</h2>
+                    <p class="para">2276 Lynn Ogden Lane Beaumont</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

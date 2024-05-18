@@ -1,0 +1,166 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #223135;
+}
+.box {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background: #7f8c2d;
+  padding: 7px 7px;
+  border: 2px solid #7f8c2d;
+  border-radius: 6px;
+  font-size: 1.2rem;
+}
+
+.box a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.box a:hover{
+  color: #7f8c2d;
+}
+.box:hover{
+  background-color: #223135;
+}
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #7f8c2d;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container header {
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #000000;
+}
+.form :where(.input-box input) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #000000;
+  margin-top: 8px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: #000000;
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #000000;
+}
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #223135;
+}
+.form button:hover {
+  background: #7f8c2d;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.upload {
+  position: relative;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload input[type="file"] {
+  display: none;
+}
+.upload label {
+  height: 50px;
+  width: 200px;
+  border: 2px dashed #000000;
+  background: #7f8c2d;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.upload label:hover {
+  border-color: #223135;
+}
+.upload label span {
+  color: #000000;
+  font-weight: 400;
+}
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+

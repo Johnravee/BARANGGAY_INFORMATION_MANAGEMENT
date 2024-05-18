@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/CSS/clearance.css" />
+  </head>
+  <body>
+    <div class="box">
+      <a href="/brrs">X</a>
+    </div>
+    <section class="container">
+      <header>BARANGAY CLEARANCE</header>
+      <form action="/clearance" class="form" method="post" enctype="multipart/form-data">
+        <label>Please Check:</label>
+        <div>
+          <input type="radio" id="checkNew" name="visits" value="New">
+          <label for="checkNew">New</label>
+          <input type="radio" id="checkRenewal" name="visits" value="Renewal">
+          <label for="checkRenewal">Renewal</label>
+        </div>
+        <div class="input-box">
+          <label>Clearance No.</label>
+          <input type="number" name="clearanceNo" placeholder="" />
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Date issued</label>
+            <input type="date" name="dateIssued" placeholder="" />
+          </div>
+          <div class="input-box">
+            <label>Date</label>
+            <input type="date" name="date" placeholder="" />
+          </div>
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>SURNAME</label>
+            <input type="text" name="surname" placeholder="" />
+          </div>
+          <div class="input-box">
+            <label>FIRSTNAME</label>
+            <input type="text" name="firstname" placeholder="" />
+          </div>
+          <div class="input-box">
+            <label>M.I</label>
+            <input type="text" name="mi" placeholder="" />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>SEX</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked value="Male" />
+              <label for="check-male">MALE</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" value="Female" />
+              <label for="check-female">FEMALE</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box">
+          <label> PRESENT ADDRESS</label>
+          <input type="text" name="presentAddress" placeholder="" />
+        </div>
+        <div class="input-box">
+          <label> PROVINCIAL ADDRESS</label>
+          <input type="text" name="provincialAddress" placeholder="" />
+        </div>
+        <div class="input-box">
+          <label>ORGANIZATION /HOMEOWNERS</label>
+          <input type="text" name="organization" placeholder="" />
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>DATE OF BIRTH</label>
+            <input type="date" name="dateOfBirth" placeholder="" />
+          </div>
+          <div class="input-box">
+            <label>AGE</label>
+            <input type="number" name="age" placeholder="" />
+          </div>
+          <div class="input-box">
+            <label>PLACE OF BIRTH</label>
+            <input type="text" name="placeOfBirth" placeholder="" />
+          </div>
+          <div class="input-box">
+            <label>CONTACT NO.</label>
+            <input type="number" name="contactNo" placeholder="" />
+          </div>
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>CIVIL STATUS</label>
+            <input type="text" name="civilStatus" placeholder="" />
+          </div>
+          <div class="input-box">
+            <label>RESIDENCE SINCE</label>
+            <input type="text" name="residenceSince" placeholder="" />
+          </div>
+          <div class="input-box">
+            <label>PERCINT NO.</label>
+            <input type="text" name="percintNo" placeholder="" />
+          </div>
+        </div>
+        <div class="input-box">
+          <label>OCCUPATION</label>
+          <input type="text" name="occupation" placeholder="" />
+        </div>
+        <div class="input-box">
+          <label>If employed, name of company</label>
+          <input type="text" name="companyName" placeholder="" />
+        </div>
+        <div class="input-box">
+          <label>PURPOSE OF CLEARANCE</label>
+          <input type="text" name="purposeOfClearance" placeholder="" />
+        </div>
+        <label>Upload ID For Verification</label>
+        <div class="upload">
+          <label for="file">Upload File</label>
+          <input type="file" id="file" name="validID" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
