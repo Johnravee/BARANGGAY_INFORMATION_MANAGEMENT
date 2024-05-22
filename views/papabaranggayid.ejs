@@ -12,102 +12,98 @@
      </div>
     <section class="container">
       <header>BARANGAY ID</header>
-      <form action="#" class="form">
+      <form action="/papabaranggayid" class="form" method="post" enctype="multipart/form-data">
         <div class="column">
         <div class="input-box">
           <label>FirstName</label>
-          <input type="text" placeholder="" required />
+          <input type="text" name="firstname" required />
         </div>
         <div class="input-box">
             <label>MiddleName</label>
-          <input type="text" placeholder="" required />
+          <input type="text" name="mi" required />
         </div>
         <div class="input-box">
             <label>Surname</label>
-            <input type="text" placeholder="" required />
+            <input type="text" name="surname" required />
           </div>
         </div>
         <div class="input-box">
             <label>ADDRESS</label>
-            <input type="text" placeholder="" required />
+            <input type="text" name="address" required />
         </div>
           <div class="input-box">
             <label>Birthday</label>
-            <input type="date" placeholder="" required />
+            <input type="date" name="birthday" required />
           </div>
           <div class="input-box">
             <label>Place of Birth</label>
-            <input type="text" placeholder="" required />
+            <input type="text" name="placeofbirth" required />
           </div>
         </div>
             <div class="input-box">
               <label>Precint Number</label>
-              <input type="text" placeholder="" required />
+              <input type="text" name="precint" required />
             </div>
             <div class="input-box">
               <label>Contact Number</label>
-              <input type="number" placeholder="" required />
+              <input type="number" name="contactno" required />
             </div>
             <div class="column">
-                <div class="select-box">
-                  <select>
-                    <option hidden>Gender</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                    <option>sadasdasd</option>
-                  </select>
-                </div>
-                <div class="select-box">
-                    <select>
-                      <option hidden>Status</option>
-                      <option>Single</option>
-                      <option>Mirried</option>
-                      <option>Widowed</option>
-                      <option>Divorced</option>
-                    </select>
-                  </div>
+              <div class="select-box">
+                <select name="gender">
+                  <option hidden>Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option> 
+                </select>
+              </div>
+              <div class="select-box">
+                <select name="status"> 
+                  <option hidden>Status</option>
+                  <option value="single">Single</option>
+                  <option value="married">Married</option> 
+                  <option value="widowed">Widowed</option>
+                  <option value="divorced">Divorced</option>
+                </select>
+              </div>
             </div>
             <div class="input-box">
                 <label>Purpose</label>
-                <input type="text" placeholder="" required />
+                <input type="text" name="purpose" required />
             </div>
             <div class="input-box">
                 <label>Height</label>
-                <input type="text" placeholder="1'1" required />
+                <input type="text" name="height" required />
             </div>
             <div class="input-box">
                 <label>Weight</label>
-                <input type="text" placeholder="50kg" required />
+                <input type="text" name="weight" required />
             </div>
             <label>Contact Person In Case of Emergency</label>
             <div class="input-box">
                 <label>Name of Parents/Guardian</label>
-                <input type="text" placeholder="Luffy D. Monkey" required />
+                <input type="text" name="nameofparents" required />
             </div>
             <div class="input-box">
                 <label>ADDRESS</label>
-                <input type="text" placeholder="01, KALBO ST. MONTALBAN,RIZAL" required />
+                <input type="text" name="guardianaddress" required />
             </div>
             <div class="input-box">
                 <label>Contact No. of Parents/Guardian</label>
-                <input type="number" placeholder="000-0000-000" required />
+                <input type="number" name="parentscontactno" required />
             </div>
             <div class="input-box">
                 <label>Relationship</label>
-                <input type="text" placeholder="Father/Mother" required />
+                <input type="text" name="rs" required />
             </div> 
             <div class="column">
               <label>Upload your Valid ID here</label>
             <div class="upload" >
                 <label for="file">Upload File</label>
-                <input type="file" id="file" required />
-            </div>
-            <div class="upload" >
-                <label for="file">Upload File</label>
-                <input type="file" id="file" required />
+                <input type="file" id="file" name="validID" required />
             </div>
             </div>
-        <button>Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </section>
   </body>

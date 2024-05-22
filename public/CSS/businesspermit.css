@@ -108,7 +108,7 @@ body {
   display: flex;
   column-gap: 15px;
 }
-.form .gender-box {
+.form .property-box {
   margin-top: 20px;
 }
 .gender-box h3 {
@@ -117,22 +117,22 @@ body {
   font-weight: 400;
   margin-bottom: 8px;
 }
-.form :where(.gender-option, .gender) {
+.form :where(.property-option, .property) {
   display: flex;
   align-items: center;
   column-gap: 50px;
   flex-wrap: wrap;
 }
-.form .gender {
+.form .property {
   column-gap: 5px;
 }
-.gender input {
+.property input {
   accent-color: #000000;
 }
-.form :where(.gender input, .gender label) {
+.form :where(.property input, .property label) {
   cursor: pointer;
 }
-.gender label {
+.property label {
   color: #000000;
 }
 .form button {
@@ -158,7 +158,7 @@ body {
   .form .column {
     flex-wrap: wrap;
   }
-  .form :where(.gender-option, .gender) {
+  .form :where(.property-option, .property) {
     row-gap: 15px;
   }
 }

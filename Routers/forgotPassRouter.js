@@ -1,11 +1,8 @@
 const express = require('express')
 const router = express.Router()
-const {Resend} = require('resend');
+
 const conn = require("../config/connection");
 
-
-
-//Ikaw na bahala ditooo men
 
 
 router.get("/forgot", (req, res)=>{

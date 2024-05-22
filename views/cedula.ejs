@@ -12,69 +12,69 @@
      </div>
     <section class="container">
       <header>CEDULA</header>
-      <form action="#" class="form">
+      <form action="/cedula" class="form" method="post" enctype="multipart/form-data">
         <div class="column">
           <div class="input-box">
             <label>SURNAME</label>
-            <input type="text" placeholder="" required />
+            <input type="text" name="surname" required />
           </div>
           <div class="input-box">
             <label>FIRSTNAME</label>
-            <input type="text" placeholder="" required />
+            <input type="text" name="firstname" required />
           </div>
           <div class="input-box">
             <label>M.I</label>
-            <input type="text" placeholder="" required />
+            <input type="text" name="mi" required />
           </div>
         </div>
         <div class="input-box">
           <label>ADDRESS</label>
-          <input type="text" placeholder="" required />
+          <input type="text" name="address" required />
         </div>
         <div class="column">
           <div class="input-box">
             <label>BIRTHDATE</label>
-            <input type="date" required />
+            <input type="date" name="birthdate" required />
           </div>
           <div class="input-box">
             <label>BIRTHPLACE</label>
-            <input type="text" placeholder="" required />
+            <input type="text" name="birthplace" required />
           </div>
         </div>
         <div class="column">
           <div class="input-box">
             <label>CITIZENSHIP</label>
-            <input type="text" placeholder="" required />
+            <input type="text" name="citizenship" required />
           </div>
           <div class="input-box">
             <label>CIVIL STATUS</label>
-            <input type="text" required />
+            <input type="text" name="civilstatus" required />
           </div>
         </div>
         <div class="input-box">
-          <label>ID TYPE</label>
-          <select required>
-            <option value="TIN ID">TIN ID</option>
-            <option value="PHILHEALTH">PHILHEALTH</option>
-            <option value="BRGY ID">BRGY I.D</option>
-            <option value="Company ID">Company IDs</option>
-            <option value="SSS ID">SSS I.D</option>
-            <option value="Passport">Passport</option>
-            <option value="Police Clearance ID">Police Clearance I.D</option>
+          <label for="idtype">ID TYPE</label>
+          <select required id="idtype" name="idtype">
+              <option value="TIN ID">TIN ID</option>
+              <option value="PHILHEALTH">PHILHEALTH</option>
+              <option value="BRGY ID">BRGY I.D</option>
+              <option value="Company ID">Company IDs</option>
+              <option value="SSS ID">SSS I.D</option>
+              <option value="Passport">Passport</option>
+              <option value="Police Clearance ID">Police Clearance I.D</option>
           </select>
-        </div>
+      </div>
         <div class="input-box">
           <label>ID NUMBER</label>
-          <input type="text" placeholder="" required />
+          <input type="text" name="idnum" required />
         </div>
         <div class="column">
           <div class="input-box">
             <label>HEIGHT</label>
-            <input type="text" required />
+            <input type="text" name="height" required />
           </div>
           <div class="input-box">
             <label>WEIGHT</label>
-            <input type="text" required />
+            <input type="text" name="weight" required />
           </div>
         </div>
         <div class="gender-box">
@@ -92,16 +92,16 @@
         </div>
         <div class="input-box">
           <label>OCCUPATION</label>
-          <input type="text" placeholder="" required />
+          <input type="text" name="occupation" required />
         </div>
         <div class="input-box">
           <label>Upload ID For Verification</label>
           <div class="upload">
             <label for="file">Upload File</label>
-            <input type="file" id="file" required />
+            <input type="file" id="file" name="validID" required />
           </div>
         </div>
-        <button>Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </section>
   </body>

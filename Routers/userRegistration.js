@@ -1,6 +1,6 @@
 const express = require('express')
 const User = require('../models/User')
-const bcrypt = require("bcrypt")
+const bcryptjs = require('bcryptjs')
 const router = express.Router()
 
 
@@ -21,7 +21,7 @@ router.post("/register", async (req, res)=>{
     const {fullname, userName, email, contactNo, password} = req.body
 
     console.log(fullname, userName, email, contactNo, password)
-    const encryptedPass = await bcrypt.hash(password, 10)
+    const encryptedPass = await bcryptjs.hash(password, 10)
     const user = new User(null, fullname, userName, email, contactNo, encryptedPass)
     const regResult = user.register()
     
