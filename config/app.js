@@ -6,6 +6,7 @@ const userRouter = require('../Routers/userAuth')
 const userRegistration = require('../Routers/userRegistration')
 const userpageRouter = require('../Routers/userpageRouter')
 const forgotPassRouter = require('../Routers/forgotPassRouter')
+const logoutRouter = require('../Routers/logoutRouter')
  
 const app = express();
 app.use(express.json())
@@ -37,6 +38,7 @@ app.use("/", userRouter)
 app.use("/", userpageRouter)
 app.use("/", userRegistration)
 app.use("/", forgotPassRouter)
+app.use("/", logoutRouter)
 
 
 //authenticate before redirecting
